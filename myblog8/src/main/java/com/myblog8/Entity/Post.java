@@ -32,7 +32,7 @@ public class Post {
 	@Column(name = "content", nullable = false)
 	private String content;
 
-        @OneToMany(mappedBy = "post", cascade = CascadeType.ALL,fetch = FetchType.LAZY)
+	@OneToMany(mappedBy = "post", cascade = CascadeType.ALL,fetch = FetchType.LAZY)
 	private List<Comment> comments;
 	
 	
